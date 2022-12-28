@@ -6,7 +6,10 @@ import "../src/Token.sol";
 
 contract DeployToken is Script {
     function run() external {
-        vm.startBroadcast();
+        ///@dev Configure .env file
+        string memory SEED = vm.envString("SEED");
+        uint256 privateKey = vm.deriveKey(SEED, 0); // address at index 0
+        vm.startBroadcast(privateKey);
 
         Token token = new Token();
 
