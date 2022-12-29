@@ -107,10 +107,10 @@ forge script scripts/Token.s.sol:DeployToken --rpc-url $RPC_URL --private-key $P
 
 ## Other commands
 
-Install libraries with Foundry which work with Hardhat
+Install libraries with Foundry which work with Hardhat. It is always Organization(UserName)/repoName
 
 ```
-forge install rari-capital/solmate # Already in this repo
+forge install rari-capital/solmate foundry-rs/forge-std Openzeppelin/openzeppelin-contracts --no-commit # Already in this repo
 ```
 
 Updating a library
