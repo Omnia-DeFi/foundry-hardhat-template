@@ -6,7 +6,7 @@ import "forge-std/Test.sol";
 import "../src/Token.sol";
 
 contract TokenTest is Test {
-    Token t;
+    Token public t;
 
     function setUp() public {
         t = new Token();
