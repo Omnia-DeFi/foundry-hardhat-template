@@ -40,7 +40,7 @@ _Notes: If for a specific case/scenario needs to be written in JS/TS you will ne
 Update git submodules & install repo's forge libraries
 
 ```
-yarn install & git submodule update --init --recursive && forge install
+yarn install & git submodule update --init --recursive && forge install Openzeppelin/openzeppelin-contracts foundry-rs/forge-std rari-capital/solmate --no-commit
 ```
 
 ### Writing Tests with Foundry
